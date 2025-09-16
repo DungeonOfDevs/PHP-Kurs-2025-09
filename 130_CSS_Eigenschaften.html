@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS per style-Element einbinden</title>
+    <style>
+        h1{
+            color: gold;
+            background-color: fuchsia;
+        }
+
+        p{
+            color: orange;
+            color: #000000; /* schwarz überschreibt orange */
+
+            /* RGB_Farbmodell: Rot-Grün-Blau */
+
+            color: #FF0000; /* rot überschreibt schwarz und orange */
+            color: #00FF00; /* grün überschreibt, orange, schwarz und rot */
+            color: #0000FF; /* blau überschreibt grün, orange, schwarz und rot */
+
+            /* Bitte für die Zukunft nur einmal color in ein Tag nehmen */
+
+            /* Wenn alle drei Werte jeweils die gleichen Ziffern haben,
+             kann auch jede Ziffern nur einmal hinschreiben. */
+
+            color: #00F;    /* blau */
+
+            color: rgb(0, 255, 0); /* grün */
+
+            /* Der vierte Wert (Alpha Kanal) bestimmt die Deckkraft und ist ein Wert zwischen 0 und 1 */
+            color: rgba(0, 255, 0, 1);  /* grün */
+
+            color: darkslateblue;
+
+            /*Schriftgröße */
+            font-size: 40px;
+
+            /* Schrift-Art */
+            /* Der Browser nimmt die erste Schrift und wenn er die nicht findet, nimmt er die nächste.
+               Es gibt Schrift-Gruppen: monospace, serif, sans-serif
+               Sobald der Schriftname mehrere Wörter besteht braucht man Anführungszeichen.
+             */
+            font-family: Comic Sans MS, Helvetica, sans-serif;
+
+            /* Schrift-Stärke */
+            font-weight: bold;  /* Entspricht 700 */
+            font-weight: normal; /* Entspricht 400 */
+            font-weight: 900;   /* 100 (ganz dünn) und 900 (ganz fett) */
+        }
+
+        h1{
+            font-family: monospace; /* monospace = Standard Schrift des Browsers */
+        }
+
+
+
+    </style>
+</head>
+<body>
+
+<h1>CSS-Eigenschaften</h1>
+
+<p>CSS steht für Cascading Styles Sheets</p>
+
+</body>
+</html>
