@@ -3,7 +3,7 @@
 // Operatoren
 
 $vorname = 'Vic';
-$nachname = 'Feifarek';
+$nachname = 'Fei';
 
 // Verkettungsoperator ist der Punkt (.)
 echo $vorname.' '. $nachname;
