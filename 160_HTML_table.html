@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML-Tabellen</title>
+    <style>
+        table {
+            border-width: 1px;
+            border-style: solid;
+            border-color: purple;
+            border: 1px solid teal; /* Alle drei Wert in einem. */
+
+            /* Die doppelten Linien entfernen. */
+            border-collapse: collapse;
+        }
+
+        /* Mehrere Selektoren per kommaseparierter Liste: */
+        th, td {
+            border: 2px solid plum;
+
+            /* Innenrand */
+            padding: 10px;
+        }
+
+    </style>
+</head>
+<body>
+<h1>HTML-Tabellen</h1>
+
+<!--
+    tr - table row
+    th - table head (Spaltenüberschrift)
+    td - table data (Normale Tabellenzelle)
+-->
+
+<table>
+    <tr>
+        <th></th>
+        <th>True</th>
+        <th>False</th>
+    </tr>
+    <tr>
+        <th>True</th>
+        <td>True</td>
+        <td>False</td>
+    </tr>
+    <tr>
+        <th>False</th>
+        <td>False</td>
+        <td>False</td>
+    </tr>
+</table>
+
+
+</body>
+</html>
