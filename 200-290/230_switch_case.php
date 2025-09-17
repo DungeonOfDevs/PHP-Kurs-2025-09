@@ -37,6 +37,7 @@ switch:
 # In Python erst seit 3.10 als match case
 
 $tag = rand(1,7);
+echo $tag. ': ';
 
 # Variablenbezeichner: lowerCamelCase
 
@@ -94,7 +95,6 @@ echo match ($tag) {
     7 => 'Sonntag',
     default => 'FEHLER',
 };
-
 
 /*
 !!! Faustregel:
