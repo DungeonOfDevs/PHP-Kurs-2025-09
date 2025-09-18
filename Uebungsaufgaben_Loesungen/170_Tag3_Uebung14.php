@@ -35,6 +35,19 @@ for ($i = 1; $i <= 10; $i++) {
         $ergebnis = $i * $j;
         // mit führenden Nullen ausgeben (immer 3-stellig)
         echo "<td>" . str_pad($ergebnis, 3, "0", STR_PAD_LEFT) . "</td>";
+        /*
+        1. echo "<td>" ... "</td>";
+            - Damit gibst du etwas in eine HTML-Tabelle aus.
+            - Alles, was zwischen <td> und </td> steht, erscheint in einer Tabellenzelle.
+
+        2. str_pad($ergebnis, 3, "0", STR_PAD_LEFT)
+            - str_pad() ist eine PHP-Funktion, die einen String (oder Zahl als String) auf eine bestimmte Länge auffüllt.
+            - Parameter:
+                -> $ergebnis → der Wert, den du ausgeben willst.
+                -> 3 → die Gesamtlänge, die das Ergebnis am Ende haben soll.
+                -> "0" → womit aufgefüllt werden soll (hier mit Nullen).
+                -> STR_PAD_LEFT → wo die Zeichen hinzugefügt werden (links).
+        👉 Das bedeutet: Falls $ergebnis weniger als 3 Zeichen lang ist, werden links Nullen ergänzt.*/
     }
 
     echo "</tr>";
