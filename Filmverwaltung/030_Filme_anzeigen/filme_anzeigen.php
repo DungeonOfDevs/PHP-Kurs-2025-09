@@ -17,7 +17,7 @@ $filme = $stmt->fetchAll();
 # Spaltenüberschriften entfernen
 $headings = array_keys($filme[0]);
 # TODO: ID-Heading raus
-unset($headings[0]);
+# unset($headings[0]);
 # TODO: Cover raus
 unset($headings[8]);
 
@@ -33,7 +33,7 @@ if (isset($headings[5])) {
 
 # TODO: ID nicht anzeigen lassen für User
 foreach($filme as $key =>  $film) {
-    unset($film['id']);
+    # unset($film['id']);
     # TODO: Cover nicht anzeigen lassen für User
     unset($film['cover']);
     $filme[$key] = $film; # IDs sind weg aber heading ID noch da, muss an andere Stelle nachgearbeitet werden
@@ -62,7 +62,7 @@ foreach($filme as $key =>  $film) {
     </tr>
 
     <?php foreach($filme as $film) {?>
-    <tr>
+    <tr onclick="location.href='film_anzeigen.php?id=<?php echo $film['id']; ?>'">
         <?php foreach ($film as $f) { ?>
 
         <td>

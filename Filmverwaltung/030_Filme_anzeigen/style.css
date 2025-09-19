@@ -1,0 +1,16 @@
+
+table {
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+
+    border-collapse: collapse;
+}
+
+/* Mehrere Selektoren per kommaseparierter Liste: */
+th, td {
+    border: 2px solid crimson;
+
+    /* Innenrand */
+    padding: 10px;
+}

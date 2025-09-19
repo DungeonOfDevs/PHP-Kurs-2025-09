@@ -62,6 +62,7 @@ foreach($filme as $key =>  $film) {
     </tr>
 
     <?php foreach($filme as $film) {?>
+
     <tr>
         <?php foreach ($film as $f) { ?>
 
@@ -71,6 +72,7 @@ foreach($filme as $key =>  $film) {
         <?php }?>
 
     </tr>
+
     <?php }?>
 </table>
 
