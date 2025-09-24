@@ -74,3 +74,17 @@ function addiere3($a, $b) {
 
 $summe = addiere3(5, 7);
 echo $summe; // 12
+
+echo "\n";
+
+# Prüfungshumor
+# Hier ist alles normal.
+# Beim Funktionsaufruf wird der Wert aus dem Argument($meineZahl) in den Parameter ($zahl) KOPIERT.
+function tueWas($zahl) {
+    $zahl *= 7;
+}
+
+$meineZahl = 4;
+tueWas($meineZahl);
+
+echo $meineZahl; // 4
